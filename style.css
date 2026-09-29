@@ -1,8 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #eaf6ff;
     margin: 0;
-    padding: 0;
+    background: #eaf6ff;
     color: #222;
 }
 
@@ -10,7 +9,7 @@ header {
     background: #087f5b;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px 15px;
 }
 
 header h1 {
@@ -21,42 +20,90 @@ header h1 {
 nav {
     background: #055c42;
     text-align: center;
-    padding: 12px;
+    padding: 15px 5px;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 15px;
+    margin: 8px;
     font-weight: bold;
 }
 
 main {
-    max-width: 900px;
-    margin: 25px auto;
+    max-width: 950px;
+    margin: auto;
     padding: 20px;
 }
 
 .post {
     background: white;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px #aaa;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #aaa;
 }
 
 .post h2 {
     color: #087f5b;
 }
 
-.post img {
+.post p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.post > img {
     width: 100%;
-    border-radius: 10px;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* PHOTO GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
 }
 
 footer {
     background: #055c42;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+}
+
+/* PHONE SCREEN */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery img {
+        height: 150px;
+    }
 }
