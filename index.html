@@ -1,134 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Change: A Threat to Our Future</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Climate Change - Protect Our Planet</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef8f5;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #087f5b, #064e3b);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #043f32;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      background: #087f5b;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 15px;
+    }
+
+    .hero {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    }
+
+    .hero h2 {
+      color: #087f5b;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* CARDS */
+    .section-title {
+      text-align: center;
+      color: #075e46;
+      margin: 35px 0 20px;
+      font-size: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 16px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 18px;
+    }
+
+    .card h3 {
+      color: #087f5b;
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    /* FACT BOX */
+    .fact-box {
+      background: linear-gradient(135deg, #087f5b, #0b6b50);
+      color: white;
+      padding: 25px;
+      border-radius: 18px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .fact-box h2 {
+      margin-bottom: 10px;
+    }
+
+    /* FIJI */
+    .fiji {
+      background: white;
+      border-radius: 18px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 5px 16px rgba(0,0,0,0.1);
+    }
+
+    .fiji img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-top: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #043f32;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 25px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+
+      .hero img {
+        height: 250px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <h1>🌍 Climate Change: A Threat to Our Future</h1>
+  <header>
+    <h1>🌍 Climate Change</h1>
     <p>Understanding climate change and protecting our planet</p>
-</header>
+  </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#causes">Causes</a>
-    <a href="#effects">Effects</a>
-    <a href="#fiji">Fiji</a>
-    <a href="#solutions">Solutions</a>
-    <a href="#gallery">Gallery</a>
-</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="causes.html">Causes</a>
+    <a href="effects.html">Effects</a>
+    <a href="fiji.html">Fiji</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
 
-<main id="home">
+  <main>
 
-    <section class="post">
-        <h2>🌱 What is Climate Change?</h2>
+    <!-- MAIN SECTION -->
+    <section class="hero">
 
-        <img src="https://images.unsplash.com/photo-1569511166187-97eb6e387e19?auto=format&fit=crop&w=1000&q=80">
+      <h2>🌱 What is Climate Change?</h2>
 
-        <p>
-            Climate change refers to long-term changes in the Earth's
-            temperature and weather patterns. Human activities such as
-            burning fossil fuels and cutting down forests are major causes
-            of modern climate change.
-        </p>
+      <!-- YOUR UPLOADED IMAGE -->
+      <img src="climate-main.jpg" alt="Climate change showing different effects on Earth">
+
+      <p>
+        Climate change refers to long-term changes in the Earth's
+        temperature and weather patterns. Human activities such as
+        burning fossil fuels, cutting down forests and pollution are
+        major causes of modern climate change.
+      </p>
+
     </section>
 
-    <section class="post" id="causes">
-        <h2>🔥 Causes of Climate Change</h2>
 
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80">
+    <!-- DIFFERENT IMAGES -->
+    <h2 class="section-title">🌎 Our Changing Planet</h2>
+
+    <section class="cards">
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1564216716029-8c3f4f6a3c3c?auto=format&fit=crop&w=900&q=80"
+          alt="Forest">
+        <div class="card-content">
+          <h3>🌳 Forests</h3>
+          <p>
+            Forests absorb carbon dioxide and help regulate the Earth's
+            climate. Protecting forests is important for our future.
+          </p>
         </div>
+      </div>
 
-        <p>
-            Some major causes include burning coal, oil and gas,
-            deforestation, pollution and some industrial activities.
-            These activities increase greenhouse gases in the atmosphere.
-        </p>
-    </section>
 
-    <section class="post" id="effects">
-        <h2>🌡️ Effects of Climate Change</h2>
-
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1532978376891-7d3f7f4b7c5d?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1560707303-4e980ce876ad?auto=format&fit=crop&w=800&q=80">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
+          alt="Ocean">
+        <div class="card-content">
+          <h3>🌊 Oceans</h3>
+          <p>
+            Oceans help control Earth's temperature and support millions
+            of people and animals.
+          </p>
         </div>
+      </div>
 
-        <p>
-            Climate change can contribute to rising temperatures,
-            changing rainfall patterns, stronger heatwaves, melting ice
-            and rising sea levels. It can also affect people, animals
-            and ecosystems.
-        </p>
-    </section>
 
-    <section class="post" id="fiji">
-        <h2>🇫🇯 Climate Change and Fiji</h2>
-
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80">
-
-        <p>
-            Fiji is a Pacific island nation that is vulnerable to
-            climate-related impacts such as coastal flooding, erosion
-            and changes in weather patterns. Protecting our environment
-            is important for the future of Fiji.
-        </p>
-    </section>
-
-    <section class="post" id="solutions">
-        <h2>🌳 What Can We Do?</h2>
-
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?auto=format&fit=crop&w=800&q=80">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+          alt="Mountain landscape">
+        <div class="card-content">
+          <h3>🏔️ Nature</h3>
+          <p>
+            Changes in temperature and rainfall can affect plants,
+            animals and natural ecosystems.
+          </p>
         </div>
+      </div>
 
-        <p>
-            We can help by planting trees, reducing waste, saving
-            electricity, using resources responsibly and keeping our
-            surroundings clean.
-        </p>
-    </section>
 
-    <section class="post" id="gallery">
-        <h2>📸 Climate Change Gallery</h2>
-
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=900&q=80"
+          alt="Green trees">
+        <div class="card-content">
+          <h3>🌿 Green Planet</h3>
+          <p>
+            Planting and protecting trees can help remove carbon dioxide
+            from the atmosphere.
+          </p>
         </div>
+      </div>
+
     </section>
 
-    <section class="post">
-        <h2>🌍 Conclusion</h2>
 
-        <p>
-            Climate change is a serious environmental challenge.
-            Everyone has a role to play in protecting our planet.
-            By making responsible choices today, we can help create
-            a safer and healthier future for the next generation.
-        </p>
+    <!-- FACT -->
+    <section class="fact-box">
+
+      <h2>💡 Did You Know?</h2>
+
+      <p>
+        Small actions such as saving electricity, reducing waste,
+        planting trees and protecting nature can help create a
+        healthier environment.
+      </p>
+
     </section>
 
-</main>
 
-<footer>
-    <p>© 2026 Climate Change Blog | Year 10 Project</p>
-</footer>
+    <!-- FIJI -->
+    <section class="fiji">
+
+      <h2 class="section-title">🇫🇯 Climate Change and Fiji</h2>
+
+      <p>
+        Fiji is a Pacific island nation that is vulnerable to the effects
+        of climate change. Rising sea levels, coastal flooding, stronger
+        storms and changes in rainfall can affect communities,
+        agriculture and the environment.
+      </p>
+
+      <img
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+        alt="Pacific ocean and coastline">
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <h3>🌱 Protect Our Planet</h3>
+
+    <p>
+      Climate change is a global challenge, and everyone can help
+      protect our environment.
+    </p>
+
+    <p>© 2026 Climate Change Project</p>
+
+  </footer>
 
 </body>
 </html>
